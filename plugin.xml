@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- id:(2)PluginID version:(3)Version -->
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-helloworld" version="0.0.1" >
+  <!-- name:(1)PluginName -->
+  <name>HelloWorldPlugin</name>
+  <description>HelloWorld Plugin</description>
+  <author>Author</author>
+  <license>Apache-2.0</license>
+  <engines>
+    <engine name="cordova" version=">=6.5.0"/>
+  </engines>
+
+  <!-- src:(5)JSFilePath name:(4)JSInterface -->
+  <js-module src="www/helloWorld.js" name="helloWorld">
+    <!-- target:(4)JSInterface -->
+    <clobbers target="helloWorld" />
+  </js-module>
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <!-- name:(6)NativeService -->
+      <feature name="HelloWorldPlugin" >
+        <!-- value:packageName+(10)AndroidSNativeClass -->
+        <param name="android-package" value="com.example.plugin.helloworld.HelloWorldPlugin"/>
+      </feature>
+    </config-file>
+    <!-- src:srcDir+(11)AndroidNativeFile target-dir:packageDir -->
+    <source-file src="src/android/HelloWorldPlugin.java" target-dir="src/com/example/plugin/helloworld" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <!-- name:(6)NativeService -->
+      <feature name="HelloWorldPlugin">
+        <!-- value:(8)iOSNativeClass -->
+        <param name="ios-package" value="CDVHelloWorldPlugin"/>
+      </feature>
+    </config-file>
+    <!-- src:(9)iOSNativeFile -->
+    <header-file src="src/ios/CDVHelloWorldPlugin.h"/>
+    <source-file src="src/ios/CDVHelloWorldPlugin.m"/>
+  </platform>
+
+</plugin>

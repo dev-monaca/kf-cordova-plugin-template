@@ -1,0 +1,28 @@
+{
+  "name": "HelloWorldPlugin",
+  "version": "0.0.1",
+  "description": "HelloWorld Plugin",
+  "cordova": {
+    "id": "cordova-plugin-helloworld",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Author",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
