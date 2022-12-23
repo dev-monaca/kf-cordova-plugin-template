@@ -13,7 +13,7 @@ import org.json.JSONArray;
 
 /**
  * Hello World Plugin Class
- * class name:(10)AndroidSNativeClass
+ * class name:(10)AndroidNativeClass
  */
 public class HelloWorldPlugin extends CordovaPlugin {
   public static final String TAG = "HelloWorldPlugin";
