@@ -1,19 +1,19 @@
 "cordova-plugin-js": {
   "prefix": "cord-plg",
   "body": [
-      "let HelloWorld = function () {};",
-      "",
-      "HelloWorld.prototype.${3:NativeAction} = function(success, fail) {",
-      "  // (6)NativeService",
-      "  const nativeService = \"${2:NativeService}\";",
-      "  // (7)NativeAction",
-      "  const nativeAction = \"${3:NativeAction}\";",
-      "  cordova.exec(success, fail, nativeService, nativeAction, []);",
-      "};",
-      "",
-      "let ${1:JSInterface} = new HelloWorld();",
-      "// (4)JSInterface",
-      "module.exports = ${1:JSInterface};"
+    "let HelloWorld = function () {};",
+    "",
+    "HelloWorld.prototype.${3:NativeAction} = function(success, fail) {",
+    "  // (6)NativeService",
+    "  const nativeService = \"${2:NativeService}\";",
+    "  // (7)NativeAction",
+    "  const nativeAction = \"${3:NativeAction}\";",
+    "  cordova.exec(success, fail, nativeService, nativeAction, []);",
+    "};",
+    "",
+    "let ${1:JSInterface} = new HelloWorld();",
+    "// (4)JSInterface",
+    "module.exports = ${1:JSInterface};"
   ],
   "description": "Cordova Plugin Snippet for JavaScript Interface"
 }
