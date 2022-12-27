@@ -12,7 +12,7 @@ Cordovaプラグインを新規作成する際の以下の２種類のツール�
 - ソースコードをダウンロードしてください。
 - 以下の必須パラメータを作成したいプラグインの設定に書き換えてお使いください。
 - 複数のファイルで同じパラメータが定義されている場合は、必ず同じ値を指定してください。
-- (6)NativeServiceは(1)PluginNameと同じ値に設定するケースが多いです。
+- (6)NativeServiceは(1)PluginNameと同じ値に設定しても構いません。
 
 ### 必須パラメータ  
 - (1)PluginName プラグイン名
@@ -39,11 +39,11 @@ VSCodeを使ってこれらのコードを自動的に入力できるユーザ�
 
 ファイルの拡張子単位でスニペットを登録します。
 
-Preferences - Configure Your Snippets を実行
-Select Snippets file or Create Snippetsでファイルの種類を選択
+1. `Preferences → Configure Your Snippets` を実行
+2. `Select Snippets file or Create Snippets`で登録したいファイルの種類を選択
 
 | ファイル | 拡張子 | スニペット |
-|---|---|
+|---|---|---|
 |package.json|.json|JSON|
 |plugin.xml|.xml|XML|
 |JS Interface class|.js|Javascript|
@@ -51,7 +51,7 @@ Select Snippets file or Create Snippetsでファイルの種類を選択
 |iOS Native Class(source)|.m|Objective-C|
 |iOS Native Class(header)|.h|C++|
 
-.hファイルのスニペットは`Objective-C`に登録しても呼び出せないので`C++`として登録します。
+`.h`ファイルのスニペットは`Objective-C`に登録しても呼び出せないので`C++`として登録します。
 
 ### 使い方
 
@@ -65,11 +65,11 @@ Tabキーで次のパラメータの入力に切り替わります。
 
 ## まとめ
 
-このように新規のCordovaプラグインを作成するための方法を２種類提供させて頂きました。
+このように新規のCordovaプラグインを作成するための方法を２種類提供させて頂きました。  
 ユーザースニペットはVSCode用のみでの提供になっていますが、各自のテキストエディタやIDEに
 合わせて設定してみてください。
 
-ユーザースニペットは今回はコード全体を出力する形式になっていますが、部分的なコードを定義することもできます。
+ユーザースニペットは今回はコード全体を出力する形式になっていますが、部分的なコードを定義することもできます。  
 例えば`plugin.xml`や`config.xml`の`<edit-config>`句や`<config-file>`句を定義しておけば
-`manifest`ファイルや`plist`ファイルを書き換える処理を追加したい際に便利です。
+`manifest`ファイルや`plist`ファイルを書き換える処理を追加したい際に便利です。  
 ニーズがあれば今後追加していきたいと思います。
