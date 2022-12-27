@@ -25,23 +25,27 @@ Cordovaプラグインを新規作成する際に役立つ以下の２種類の�
 ```
 
 - このリポジトリからソースコードをzip形式でダウンロード・解凍してください。
-- 以下の必須パラメータを作成したいプラグインの設定に書き換えてお使いください。
+- 後述の必須パラメータを作成したいプラグインの設定に書き換えてお使いください。
 - ファイル名を変更した場合はパラメータも合わせて変更してください。
 - 複数のファイルで同じパラメータが定義されている場合は、必ず同じ値を指定してください。
 - (6)NativeServiceは(1)PluginNameと同じ値に設定しても構いません。
 
 ### 必須パラメータ  
-- (1)PluginName プラグイン名
-- (2)PluginID   プラグインID
-- (3)Version  バージョン番号
-- (4)JSInterface  JavaScriptインターフェース名
-- (5)JSFilePath   JavaScriptファイルパス
-- (6)NativeService  ネイティブサービス名
-- (7)NativeAction   ネイティブアクション名
-- (8)iOSNativeClass iOSネイティブクラス名
-- (9)iOSNativeFile  iOSネイティブファイル名
-- (10)AndroidSNativeClass Androidネイティブクラス名
-- (11)AndroidNativeFile   Androidネイティブファイル名
+
+|パラメータ|説明|plugin.xml|package.json|JavaScript|iOSネイティブ|Androidネイティブ|
+|---|---|---|---|---|---|---|
+|(1)PluginName|プラグイン名|○|○||||
+|(2)PluginID|プラグインID|○|○||||
+|(3)Version|バージョン番号|○|○||||
+|(4)JSInterface|JavaScriptインターフェース名|○||○|||
+|(5)JSFilePath|JavaScriptファイルパス|○||○|||
+|(6)NativeService|ネイティブサービス名|○||○|||
+|(7)NativeAction|ネイティブアクション名|||○|○|○|
+|(8)iOSNativeClass|iOSネイティブクラス名|○|||○||
+|(9)iOSNativeFile|iOSネイティブファイル名|○|||○||
+|(10)AndroidSNativeClass|Androidネイティブクラス名|○||||○|
+|(11)AndroidNativeFile|Androidネイティブファイル名|○||||○|
+
 
 ## Visual Studio Code用ユーザースニペット
 
