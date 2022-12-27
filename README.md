@@ -76,7 +76,7 @@ VSCodeを使ってこれらのコードを自動的に入力できるユーザ�
 |iOS Native Class(source)|.m|Objective-C|
 |iOS Native Class(header)|.h|C++|
 
-3. `snippets/vscode/*.snippet`の内容をコピーして
+3. `snippets/vscode/*.snippet`の内容をコピーしてスニペット定義ファイルに貼り付けてください。
 
 ### 使い方
 
