@@ -41,8 +41,15 @@ VSCodeを使ってこれらのコードを自動的に入力できるユーザ�
 
 ファイルの拡張子単位でスニペットを登録します。
 
-1. `Preferences → Configure Your Snippets` を実行
-2. `Select Snippets file or Create Snippets`で登録したいファイルの種類を選択
+1. `Preferences → Configure Your Snippets` を実行。
+2. `Select Snippets file or Create Snippets`でファイルの種類を選択。
+
+スニペットの定義ファイル(JSON)が開かれます。
+
+ファイルの種類はそれぞれ登録したいファイルの拡張子に合わせて選んでください。  
+注意) Objective-Cファイルの場合  
+- `.m`ファイルの場合は`Objective-C`を選択してください。  
+- `.h`ファイルの場合は`C++`**を選択してください**。`Objective-C`に登録しても呼び出せません。  
 
 | ファイル | 拡張子 | スニペット |
 |---|---|---|
@@ -53,7 +60,7 @@ VSCodeを使ってこれらのコードを自動的に入力できるユーザ�
 |iOS Native Class(source)|.m|Objective-C|
 |iOS Native Class(header)|.h|C++|
 
-`.h`ファイルのスニペットは`Objective-C`に登録しても呼び出せないので`C++`として登録します。
+3. `snippets/vscode/*.snippet`の内容をコピーして
 
 ### 使い方
 
